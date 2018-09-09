@@ -6,16 +6,22 @@ import "../assets/scss/TodoList.scss";
 export interface Todo {
     contents: string;
     completed: boolean;
-    timeCreated?: Date; // TODO: Add this later
+    timeCreated: number;
+    id: string;
 }
 
 interface TodoListProps {
     todos: Todo[];
+    onDelete: (id: string) => void;
+    onComplete: (id: string) => void;
 }
 
-export const TodoList: React.SFC<TodoListProps> = ({ todos }) => {
-    // TODO: Fix the key to be better
+export const TodoList: React.SFC<TodoListProps> = ({ onComplete, onDelete, todos }) => {
     return (<div className="todo-list">
-        {todos.map(({ completed, contents }) => <TodoItem completed={completed} contents={contents} key={contents} onDelete={() => {}} onComplete={() => {}} />)}
+        {todos.map(({ completed, contents, id, timeCreated }) => <TodoItem completed={completed} contents={contents} key={`${timeCreated}-${contents}`} onDelete={onDelete} onComplete={onComplete} id={id} timeCreated={timeCreated} />)}
     </div>);
 };
+
+TodoList.displayName = "TodoList";
+
+export default TodoList;

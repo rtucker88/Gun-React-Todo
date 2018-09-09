@@ -16,4 +16,6 @@ const Navbar: React.SFC<NavbarProps> = () => {
         </BlueprintNavbar>);
 };
 
+Navbar.displayName = "Navbar";
+
 export default Navbar;

@@ -3,6 +3,10 @@ import {render} from "react-dom";
 import {AppContainer} from "react-hot-loader";
 import App from "./components/App";
 
+import "../node_modules/normalize.css/normalize.css";
+import "../node_modules/@blueprintjs/icons/lib/css/blueprint-icons.css";
+import "../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+
 const rootEl = document.getElementById("root");
 
 render(

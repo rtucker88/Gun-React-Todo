@@ -1,10 +1,25 @@
-/* TODO: What's the spacing of Blueprint? */
+@import "../../../node_modules/@blueprintjs/core/lib/scss/variables";
+
 .todo {
   width: 300px;
-  margin-top: 8px;
+  margin-top: $pt-grid-size;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .completed {
   text-decoration: line-through;
   // Add a lighten mix-in
+}
+
+.aligner {
+  align-self: center;
+  max-width: 60%;
+}
+
+.created-date {
+  width: 100%;
+  color: $pt-text-color-muted;
 }
