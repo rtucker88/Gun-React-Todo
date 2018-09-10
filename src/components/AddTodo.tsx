@@ -3,6 +3,8 @@ import { InputGroup, Button } from "@blueprintjs/core";
 import { compose, withHandlers, withState } from "recompose";
 
 import "../assets/scss/AddTodo.scss";
+import { translate } from "react-i18next";
+import { TransProps } from "react-i18next/src/trans";
 
 interface AddTodoProps {
     onAddTodo: (text: string) => void;
@@ -33,18 +35,18 @@ const enhance = compose<AddTodoCombinedProps, AddTodoProps>(
     }),
 );
 
-type AddTodoCombinedProps = AddTodoProps & AddTodoStateProps & AddTodoHandlers;
+type AddTodoCombinedProps = AddTodoProps & AddTodoStateProps & AddTodoHandlers & TransProps;
 
-const AddTodo: React.SFC<AddTodoCombinedProps> = ({ onAddNewTodo, onKeyDown, onInputChange, text }) => {
+const AddTodo: React.SFC<AddTodoCombinedProps> = ({ onAddNewTodo, onKeyDown, onInputChange, t, text }) => {
     return (
         <div className="add-todo-container">
             <div className="add-todo">
-                    <InputGroup onKeyDown={onKeyDown} onChange={onInputChange} value={text} className="add-todo-input" placeholder="Enter a new todo"/>
-                    <Button onClick={() => onAddNewTodo(text)} icon="add" minimal={true} />
-                </div>
+                <InputGroup onKeyDown={onKeyDown} onChange={onInputChange} value={text} className="add-todo-input" placeholder={t("enterANewTodo")}/>
+                <Button onClick={() => onAddNewTodo(text)} icon="add" minimal={true} />
+            </div>
         </div>);
 };
 
 AddTodo.displayName = "AddTodo";
 
-export default enhance(AddTodo);
+export default translate("addTodos")(enhance(AddTodo));

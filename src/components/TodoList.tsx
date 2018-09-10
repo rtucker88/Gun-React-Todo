@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Todo as TodoItem } from "./Todo";
+import { default as TodoItem } from "./Todo";
 
 import "../assets/scss/TodoList.scss";
 

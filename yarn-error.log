@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/Cellar/node/10.9.0/bin/node /Users/ryantucker/.yarn/bin/yarn.js add data-fns --dev
+  /usr/local/Cellar/node/10.9.0/bin/node /Users/ryantucker/.yarn/bin/yarn.js add i18next-language-detector --dev
 
 PATH: 
   /Users/ryantucker/.pyenv/shims:/Users/ryantucker/.yarn/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/ryantucker/.pyenv/shims:/Users/ryantucker/.yarn/bin
@@ -56,20 +56,25 @@ npm manifest:
       "@babel/preset-react": "^7.0.0",
       "@blueprintjs/core": "^3.5.1",
       "@types/classnames": "^2.2.6",
+      "@types/i18next": "^8.4.5",
       "@types/jest": "^23.3.1",
       "@types/node": "^10.7.1",
       "@types/react": "^16.4.11",
       "@types/react-dom": "^16.0.7",
+      "@types/react-i18next": "^7.8.2",
       "@types/recompose": "^0.26.4",
       "@types/uuid": "^3.4.4",
       "awesome-typescript-loader": "^5.2.0",
       "babel-loader": "^8.0.0",
       "classnames": "^2.2.6",
       "css-loader": "^1.0.0",
+      "date-fns": "^2.0.0-alpha.16",
       "express": "^4.16.3",
       "file-loader": "^2.0.0",
       "gun": "^0.9.99993",
       "html-webpack-plugin": "^3.2.0",
+      "i18next": "^11.7.0",
+      "i18next-browser-languagedetector": "^2.2.3",
       "image-webpack-loader": "^4.3.1",
       "jest": "^23.5.0",
       "node-sass": "^4.9.3",
@@ -77,6 +82,7 @@ npm manifest:
       "react-addons-test-utils": "^15.6.2",
       "react-dom": "^16.4.2",
       "react-hot-loader": "^4.3.4",
+      "react-i18next": "^7.11.1",
       "recompose": "^0.30.0",
       "sass-loader": "^7.1.0",
       "style-loader": "^0.23.0",
@@ -814,6 +820,10 @@ Lockfile:
     version "2.0.1"
     resolved "https://registry.yarnpkg.com/@types/dom4/-/dom4-2.0.1.tgz#506d5781b9bcab81bd9a878b198aec7dee2a6033"
   
+  "@types/i18next@*", "@types/i18next@^8.4.5":
+    version "8.4.5"
+    resolved "https://registry.yarnpkg.com/@types/i18next/-/i18next-8.4.5.tgz#d6c0cb594258815219c70006e9f5cd65ad6d797f"
+  
   "@types/jest@^23.3.1":
     version "23.3.1"
     resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.3.1.tgz#a4319aedb071d478e6f407d1c4578ec8156829cf"
@@ -833,6 +843,13 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.0.7.tgz#54d0f867a76b90597e8432030d297982f25c20ba"
     dependencies:
       "@types/node" "*"
+      "@types/react" "*"
+  
+  "@types/react-i18next@^7.8.2":
+    version "7.8.2"
+    resolved "https://registry.yarnpkg.com/@types/react-i18next/-/react-i18next-7.8.2.tgz#a388e3a2b97da361761000cdcd23b9a621f81472"
+    dependencies:
+      "@types/i18next" "*"
       "@types/react" "*"
   
   "@types/react@*", "@types/react@^16.4.11":
@@ -2487,6 +2504,10 @@ Lockfile:
       abab "^2.0.0"
       whatwg-mimetype "^2.1.0"
       whatwg-url "^7.0.0"
+  
+  date-fns@^2.0.0-alpha.16:
+    version "2.0.0-alpha.16"
+    resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.0.0-alpha.16.tgz#d249a6c9b799252652fb9e3f25460eaf9de86ac7"
   
   date-now@^0.1.4:
     version "0.1.4"
@@ -4178,6 +4199,12 @@ Lockfile:
       relateurl "0.2.x"
       uglify-js "3.4.x"
   
+  html-parse-stringify2@2.0.1:
+    version "2.0.1"
+    resolved "https://registry.yarnpkg.com/html-parse-stringify2/-/html-parse-stringify2-2.0.1.tgz#dc5670b7292ca158b7bc916c9a6735ac8872834a"
+    dependencies:
+      void-elements "^2.0.1"
+  
   html-tags@^2.0.0:
     version "2.0.0"
     resolved "https://registry.yarnpkg.com/html-tags/-/html-tags-2.0.0.tgz#10b30a386085f43cede353cc8fa7cb0deeea668b"
@@ -4268,6 +4295,14 @@ Lockfile:
   https-browserify@^1.0.0:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
+  
+  i18next-browser-languagedetector@^2.2.3:
+    version "2.2.3"
+    resolved "https://registry.yarnpkg.com/i18next-browser-languagedetector/-/i18next-browser-languagedetector-2.2.3.tgz#4196a9964b6d51b76254706a267ba746c9ca19de"
+  
+  i18next@^11.7.0:
+    version "11.7.0"
+    resolved "https://registry.yarnpkg.com/i18next/-/i18next-11.7.0.tgz#caf2f3d512ca5b2f556f065f698f33d44ca311d7"
   
   iconv-lite@0.4.19:
     version "0.4.19"
@@ -7137,6 +7172,14 @@ Lockfile:
       react-lifecycles-compat "^3.0.4"
       shallowequal "^1.0.2"
   
+  react-i18next@^7.11.1:
+    version "7.11.1"
+    resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-7.11.1.tgz#eacaec8357f5557eaf290eae198025fe0a682603"
+    dependencies:
+      hoist-non-react-statics "^2.3.1"
+      html-parse-stringify2 "2.0.1"
+      prop-types "^15.6.0"
+  
   react-lifecycles-compat@^3.0.2, react-lifecycles-compat@^3.0.4:
     version "3.0.4"
     resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
@@ -9055,6 +9098,10 @@ Lockfile:
     dependencies:
       indexof "0.0.1"
   
+  void-elements@^2.0.1:
+    version "2.0.1"
+    resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
+  
   w3c-hr-time@^1.0.1:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/w3c-hr-time/-/w3c-hr-time-1.0.1.tgz#82ac2bff63d950ea9e3189a58a65625fedf19045"
@@ -9462,7 +9509,7 @@ Lockfile:
       fd-slicer "~1.1.0"
 
 Trace: 
-  Error: https://registry.yarnpkg.com/data-fns: Not found
+  Error: https://registry.yarnpkg.com/i18next-language-detector: Not found
       at Request.params.callback [as _callback] (/Users/ryantucker/.yarn/lib/cli.js:62098:18)
       at Request.self.callback (/Users/ryantucker/.yarn/lib/cli.js:123085:22)
       at Request.emit (events.js:182:13)
