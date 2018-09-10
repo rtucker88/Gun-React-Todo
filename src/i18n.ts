@@ -55,6 +55,27 @@ i18n
                     "home": "Home",
                     "about": "Πληροφορίες"
                 }
+            },
+            uk: {
+                "noTodosFound": {
+                    "noneFoundTitle": "Не знайдено що робити",
+                    "noneFoundDescription": "Не знайдено що робити. Спробуйте змінити налаштування зверху, або додайте замітки що зробити."
+                },
+                "filterToggle": {
+                    "all": "Всі",
+                    "incomplete": "Незавершені",
+                    "completed": "Завершені"
+                },
+                "addTodos": {
+                    "enterANewTodo": "Створіть новий запис"
+                },
+                "todo": {
+                    "created": "Створено"
+                },
+                "navBar": {
+                    "home": "Додому",
+                    "about": "Про програму"
+                }
             }
         },
         interpolation: {
