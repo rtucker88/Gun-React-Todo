@@ -37,7 +37,23 @@ i18n
             },
             el: {
                 "noTodosFound": {
-                    "noneFoundTitle": "Δεν βρέθηκε Todos",
+                    "noneFoundTitle": "Δεν βρέθηκε εκκρεμούσα εργασία",
+                    "noneFoundDescription": "Δεν βρέθηκε εκκρεμούσα εργασία. Αλλάξετε φίλτρο ή προσθέσετε καινούργια εκκρεμούσα εργασία."
+                },
+                "filterToggle": {
+                    "all": "Όλες",
+                    "incomplete": "Εκκρεμής",
+                    "completed": "Ολοκληρωμένο"
+                },
+                "addTodos": {
+                    "enterANewTodo": "Προσθέσετε καινούργια εκκρεμούσα εργασία."
+                },
+                "todo": {
+                    "created": "Δημιουργήθηκε"
+                },
+                "navbar": {
+                    "home": "Home",
+                    "about": "Πληροφορίες"
                 }
             }
         },
