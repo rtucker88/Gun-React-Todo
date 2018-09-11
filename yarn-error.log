@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/Cellar/node/10.9.0/bin/node /Users/ryantucker/.yarn/bin/yarn.js add i18next-language-detector --dev
+  /usr/local/Cellar/node/10.9.0/bin/node /Users/ryantucker/.yarn/bin/yarn.js add @types/gun --dev
 
 PATH: 
   /Users/ryantucker/.pyenv/shims:/Users/ryantucker/.yarn/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/ryantucker/.pyenv/shims:/Users/ryantucker/.yarn/bin
@@ -57,6 +57,7 @@ npm manifest:
       "@blueprintjs/core": "^3.5.1",
       "@types/classnames": "^2.2.6",
       "@types/i18next": "^8.4.5",
+      "@types/i18next-browser-languagedetector": "^2.0.1",
       "@types/jest": "^23.3.1",
       "@types/node": "^10.7.1",
       "@types/react": "^16.4.11",
@@ -819,6 +820,10 @@ Lockfile:
   "@types/dom4@^2.0.0":
     version "2.0.1"
     resolved "https://registry.yarnpkg.com/@types/dom4/-/dom4-2.0.1.tgz#506d5781b9bcab81bd9a878b198aec7dee2a6033"
+  
+  "@types/i18next-browser-languagedetector@^2.0.1":
+    version "2.0.1"
+    resolved "https://registry.yarnpkg.com/@types/i18next-browser-languagedetector/-/i18next-browser-languagedetector-2.0.1.tgz#35490253884b15311c54108697d5a7147a75df95"
   
   "@types/i18next@*", "@types/i18next@^8.4.5":
     version "8.4.5"
@@ -9509,7 +9514,7 @@ Lockfile:
       fd-slicer "~1.1.0"
 
 Trace: 
-  Error: https://registry.yarnpkg.com/i18next-language-detector: Not found
+  Error: https://registry.yarnpkg.com/@types%2fgun: Not found
       at Request.params.callback [as _callback] (/Users/ryantucker/.yarn/lib/cli.js:62098:18)
       at Request.self.callback (/Users/ryantucker/.yarn/lib/cli.js:123085:22)
       at Request.emit (events.js:182:13)

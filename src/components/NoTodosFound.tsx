@@ -9,9 +9,7 @@ interface NoTodosFoundProps {}
 
 type NoTodosFoundCombinedProps = NoTodosFoundProps & TransProps;
 
-export const NoTodosFound: React.SFC<NoTodosFoundCombinedProps> = (props) => {
-    const { t } = props;
-
+export const NoTodosFound: React.SFC<NoTodosFoundCombinedProps> = ({ t }) => {
     return (<div className="no-todos-found">
         <NonIdealState title={t("noneFoundTitle")} description={t("noneFoundDescription")} icon="zoom-out" />
     </div>);

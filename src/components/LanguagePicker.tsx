@@ -7,7 +7,7 @@ interface LanguagePickerProps {
     currentLanguage: I18nLanguage;
 }
 
-export type I18nLanguage = "en" | "de" | "el";
+export type I18nLanguage = "en" | "de" | "el" | "uk";
 
 export const LanguagePicker: React.SFC<LanguagePickerProps> = ({ currentLanguage, onChangeLanguage }) => {
     return (
@@ -26,6 +26,7 @@ function getMenuItems(onClick: (language: I18nLanguage) => void) {
         <MenuItem text={`${getFlagFromCountryCode("US")} English`} onClick={() => onClick("en")} />
         <MenuItem text={`${getFlagFromCountryCode("DE")} Deutsch`} onClick={() => onClick("de")} />
         <MenuItem text={`${getFlagFromCountryCode("GR")} ελληνικά`} onClick={() => onClick("el")} />
+        <MenuItem text={`${getFlagFromCountryCode("UA")} Українська`} onClick={() => onClick("uk")} />
     </Menu>);
 }
 
@@ -37,6 +38,8 @@ function getCurrentLocaleFlag(locale: I18nLanguage): string {
             return getFlagFromCountryCode("DE");
         case "el":
             return getFlagFromCountryCode("GR");
+        case "uk":
+            return getFlagFromCountryCode("UA");
         default:
             throw new UnreachableCaseError(locale);
     }
