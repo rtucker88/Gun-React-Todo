@@ -52,9 +52,8 @@ export default class App extends React.Component<AppProps, AppState> {
 
     private handleAddTodo = (text: string) => {
         this.setState((state: Readonly<AppState>) => {
-            state.todos.push({ contents: text, completed: false, timeCreated: Date.now(), id: uuidv4() });
             return {
-                todos: state.todos,
+                todos: [...state.todos, { contents: text, completed: false, timeCreated: Date.now(), id: uuidv4() }],
             };
         });
     }

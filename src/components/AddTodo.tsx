@@ -1,6 +1,6 @@
 import * as React from "react";
 import { InputGroup, Button } from "@blueprintjs/core";
-import { compose, withHandlers, withState, withStateHandlers, setDisplayName } from "recompose";
+import { compose, withHandlers, withStateHandlers, setDisplayName, StateHandlerMap } from "recompose";
 
 import "../assets/scss/AddTodo.scss";
 import { translate } from "react-i18next";
@@ -12,6 +12,9 @@ interface AddTodoProps {
 
 interface AddTodoStateProps {
     text: string;
+}
+
+interface AddTodoStateHandlers {
     onTextChange: (text: string) => { text: string };
     onAddNewTodo: () => { text: string };
 }
@@ -19,12 +22,10 @@ interface AddTodoStateProps {
 interface AddTodoHandlers {
     onKeyDown: (event: React.KeyboardEvent<HTMLInputElement>) => void;
     onInputChange: (event: React.FormEvent<HTMLInputElement>) => void;
-    onAddNewTodo: (text: string) => void;
 }
 
-const enhance = compose<AddTodoCombinedProps, AddTodoProps>(
-    withState("text", "onTextChange", ""),
-    withStateHandlers({ text: "" }, {
+const enhance = compose<AddTodoProps, AddTodoCombinedProps>(
+    withStateHandlers<AddTodoStateProps, Partial<AddTodoStateHandlers>, AddTodoProps>({ text: "" }, {
         onTextChange: () => (text: string) => {
             return {
                 text,
@@ -38,14 +39,14 @@ const enhance = compose<AddTodoCombinedProps, AddTodoProps>(
             };
         },
     }),
-    withHandlers({
-        onKeyDown: (props: AddTodoCombinedProps) => (event: React.KeyboardEvent<HTMLInputElement>) => event.keyCode === 13 ? props.onAddNewTodo(props.text) : null,
+    withHandlers<AddTodoProps, AddTodoHandlers>({
+        onKeyDown: (props: AddTodoCombinedProps) => (event: React.KeyboardEvent<HTMLInputElement>) => event.keyCode === 13 ? props.onAddNewTodo() : null,
         onInputChange: (props: AddTodoCombinedProps) => (event: React.FormEvent<HTMLInputElement>) => props.onTextChange(event.currentTarget.value),
     }),
     setDisplayName("AddTodo"),
 );
 
-type AddTodoCombinedProps = AddTodoProps & AddTodoStateProps & AddTodoHandlers & TransProps;
+type AddTodoCombinedProps = AddTodoProps & AddTodoStateProps & AddTodoStateHandlers & AddTodoHandlers & TransProps;
 
 const AddTodo: React.SFC<AddTodoCombinedProps> = ({ onAddNewTodo, onKeyDown, onInputChange, t, text }) => {
     return (
@@ -56,5 +57,7 @@ const AddTodo: React.SFC<AddTodoCombinedProps> = ({ onAddNewTodo, onKeyDown, onI
             </div>
         </div>);
 };
+
+export const EnhancedTodo = enhance(AddTodo);
 
 export default translate("addTodos")(enhance(AddTodo));
