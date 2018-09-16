@@ -1,8 +1,9 @@
 import * as React from "react";
 import { Navbar as BlueprintNavbar, NavbarGroup, NavbarHeading, NavbarDivider, Button, Classes, Alignment } from "@blueprintjs/core";
-import { LanguagePicker, I18nLanguage } from "./LanguagePicker";
+import { default as LanguagePicker, I18nLanguage } from "./LanguagePicker";
 import { translate } from "react-i18next";
 import { TransProps } from "react-i18next/src/trans";
+import { compose, setDisplayName, pure } from "recompose";
 
 interface NavbarProps {
     onChangeLanguage: (language: I18nLanguage) => void;
@@ -25,6 +26,6 @@ const Navbar: React.SFC<CombinedNavbarProps> = ({ onChangeLanguage, currentLangu
         </BlueprintNavbar>);
 };
 
-Navbar.displayName = "Navbar";
+const enhance = compose<{}, NavbarProps>(setDisplayName("Navbar"), pure, translate("navbar"));
 
-export default translate("navbar")(Navbar);
+export default enhance(Navbar);

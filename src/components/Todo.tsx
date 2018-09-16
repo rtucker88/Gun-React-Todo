@@ -1,6 +1,6 @@
 import * as React from "react";
-import * as classNames from "classnames";
-import { withHandlers } from "recompose";
+import classNames from "classnames";
+import { withHandlers, compose, setDisplayName } from "recompose";
 import { Card, Button, Checkbox } from "@blueprintjs/core";
 import { formatRelative } from "date-fns";
 import { enUS, de } from "date-fns/esm/locale";
@@ -24,27 +24,28 @@ interface TodoHandlerProps {
     handleDelete: () => void;
 }
 
-const enhance = withHandlers<TodoProps, TodoHandlerProps>({
+export const handlers = withHandlers<TodoProps, TodoHandlerProps>({
     handleComplete: props => () => props.onComplete(props.id),
     handleDelete: props => () => props.onDelete(props.id),
 });
 
-type CombinedTodoProps = TodoProps & TodoHandlerProps & TransProps;
+const enhance = compose<TodoHandlerProps, TodoProps>(setDisplayName("Todo"), translate("todo"), handlers);
 
-export const Todo: React.SFC<CombinedTodoProps> = ({ completed, contents, i18n, handleComplete, handleDelete, t, timeCreated }) => {
+export type CombinedTodoProps = TodoProps & TodoHandlerProps & TransProps;
+
+const Todo: React.SFC<CombinedTodoProps> = ({ completed, contents, i18n, handleComplete, handleDelete, t, timeCreated }) => {
     return (<Card className={classNames("todo", { completed })}>
             <Checkbox checked={completed} onChange={handleComplete} className="aligner"/>
             <p className="aligner">{contents}</p>
             <Button icon="trash" onClick={handleDelete} minimal={true} intent="danger" className="aligner" />
-            <span className="created-date">{`${t("created")} ${formatRelative(timeCreated, Date.now(), { locale: getDateFnLocale(i18n.language as I18nLanguage) })}`}</span>
+            <span className="created-date">{`${t("created")} ${formatRelative(timeCreated, Date.now(), { locale: getDateFnLocale((i18n as any).default.language as I18nLanguage) })}`}</span>
     </Card>);
 };
 
-Todo.displayName = "Todo";
 
-export default translate("todo")(enhance(Todo));
+export default enhance(Todo);
 
-function getDateFnLocale(language: I18nLanguage) {
+export function getDateFnLocale(language: I18nLanguage) {
     switch (language) {
         case "en":
             return enUS;

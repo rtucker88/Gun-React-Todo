@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todo should render correctly 1`] = `
+<NoTodosFound>
+  <Component>
+    <NoTodosFound
+      i18n={
+        Object {
+          "default": Object {
+            "language": "en",
+          },
+        }
+      }
+      t={[Function]}
+    >
+      <div
+        className="no-todos-found"
+      >
+        <Blueprint3.NonIdealState
+          description="noneFoundDescription"
+          icon="zoom-out"
+          title="noneFoundTitle"
+        >
+          <div
+            className="bp3-non-ideal-state"
+          >
+            <div
+              className="bp3-non-ideal-state-visual"
+            >
+              <Blueprint3.Icon
+                icon="zoom-out"
+                iconSize={60}
+              >
+                <span
+                  className="bp3-icon bp3-icon-zoom-out"
+                  icon="zoom-out"
+                >
+                  <svg
+                    data-icon="zoom-out"
+                    height={60}
+                    viewBox="0 0 20 20"
+                    width={60}
+                  >
+                    <desc>
+                      zoom-out
+                    </desc>
+                    <path
+                      d="M11 7H5c-.55 0-1 .45-1 1s.45 1 1 1h6c.55 0 1-.45 1-1s-.45-1-1-1zm8.56 10.44l-4.94-4.94A8.004 8.004 0 0 0 16 8c0-4.42-3.58-8-8-8S0 3.58 0 8s3.58 8 8 8c1.67 0 3.21-.51 4.5-1.38l4.94 4.94a1.498 1.498 0 1 0 2.12-2.12zM8 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"
+                      fillRule="evenodd"
+                      key="0"
+                    />
+                  </svg>
+                </span>
+              </Blueprint3.Icon>
+            </div>
+            <Component>
+              <h4
+                className="bp3-heading"
+              >
+                noneFoundTitle
+              </h4>
+            </Component>
+            <div>
+              noneFoundDescription
+            </div>
+          </div>
+        </Blueprint3.NonIdealState>
+      </div>
+    </NoTodosFound>
+  </Component>
+</NoTodosFound>
+`;

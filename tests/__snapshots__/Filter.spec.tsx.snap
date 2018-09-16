@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter renders correctly 1`] = `
+<Filter
+  filterToggle="ALL"
+  onUpdateFilter={[MockFunction]}
+>
+  <withHandlers(Filter)
+    filterToggle="ALL"
+    i18n={
+      Object {
+        "default": Object {
+          "language": "en",
+        },
+      }
+    }
+    onUpdateFilter={[MockFunction]}
+    t={[Function]}
+  >
+    <Filter
+      filterToggle="ALL"
+      i18n={
+        Object {
+          "default": Object {
+            "language": "en",
+          },
+        }
+      }
+      onUpdateFilter={[MockFunction]}
+      t={[Function]}
+      updateAll={[Function]}
+      updateCompleted={[Function]}
+      updateIncomplete={[Function]}
+    >
+      <div
+        className="filter"
+      >
+        <Blueprint3.ButtonGroup>
+          <div
+            className="bp3-button-group"
+          >
+            <Blueprint3.Button
+              active={true}
+              onClick={[Function]}
+            >
+              <button
+                className="bp3-button bp3-active"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                type="button"
+              >
+                <Blueprint3.Icon
+                  key="leftIcon"
+                />
+                <span
+                  className="bp3-button-text"
+                  key="text"
+                >
+                  all
+                </span>
+                <Blueprint3.Icon
+                  key="rightIcon"
+                />
+              </button>
+            </Blueprint3.Button>
+            <Blueprint3.Button
+              active={false}
+              icon="square"
+              onClick={[Function]}
+            >
+              <button
+                className="bp3-button"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                type="button"
+              >
+                <Blueprint3.Icon
+                  icon="square"
+                  key="leftIcon"
+                >
+                  <span
+                    className="bp3-icon bp3-icon-square"
+                    icon="square"
+                  >
+                    <svg
+                      data-icon="square"
+                      height={16}
+                      viewBox="0 0 16 16"
+                      width={16}
+                    >
+                      <desc>
+                        square
+                      </desc>
+                      <path
+                        d="M15 0H1C.45 0 0 .45 0 1v14c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V1c0-.55-.45-1-1-1zm-1 14H2V2h12v12z"
+                        fillRule="evenodd"
+                        key="0"
+                      />
+                    </svg>
+                  </span>
+                </Blueprint3.Icon>
+                <span
+                  className="bp3-button-text"
+                  key="text"
+                >
+                  incomplete
+                </span>
+                <Blueprint3.Icon
+                  key="rightIcon"
+                />
+              </button>
+            </Blueprint3.Button>
+            <Blueprint3.Button
+              active={false}
+              icon="tick"
+              onClick={[Function]}
+            >
+              <button
+                className="bp3-button"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                type="button"
+              >
+                <Blueprint3.Icon
+                  icon="tick"
+                  key="leftIcon"
+                >
+                  <span
+                    className="bp3-icon bp3-icon-tick"
+                    icon="tick"
+                  >
+                    <svg
+                      data-icon="tick"
+                      height={16}
+                      viewBox="0 0 16 16"
+                      width={16}
+                    >
+                      <desc>
+                        tick
+                      </desc>
+                      <path
+                        d="M14 3c-.28 0-.53.11-.71.29L6 10.59l-3.29-3.3a1.003 1.003 0 0 0-1.42 1.42l4 4c.18.18.43.29.71.29s.53-.11.71-.29l8-8A1.003 1.003 0 0 0 14 3z"
+                        fillRule="evenodd"
+                        key="0"
+                      />
+                    </svg>
+                  </span>
+                </Blueprint3.Icon>
+                <span
+                  className="bp3-button-text"
+                  key="text"
+                >
+                  completed
+                </span>
+                <Blueprint3.Icon
+                  key="rightIcon"
+                />
+              </button>
+            </Blueprint3.Button>
+          </div>
+        </Blueprint3.ButtonGroup>
+      </div>
+    </Filter>
+  </withHandlers(Filter)>
+</Filter>
+`;

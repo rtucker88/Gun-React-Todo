@@ -1,7 +1,8 @@
 import * as React from "react";
-import { default as TodoItem } from "./Todo";
+import TodoItem from "./Todo";
 
 import "../assets/scss/TodoList.scss";
+import { compose, setDisplayName, pure } from "recompose";
 
 export interface Todo {
     contents: string;
@@ -16,12 +17,12 @@ interface TodoListProps {
     onComplete: (id: string) => void;
 }
 
-export const TodoList: React.SFC<TodoListProps> = ({ onComplete, onDelete, todos }) => {
+const TodoList: React.SFC<TodoListProps> = ({ onComplete, onDelete, todos }) => {
     return (<div className="todo-list">
         {todos.map(({ completed, contents, id, timeCreated }) => <TodoItem completed={completed} contents={contents} key={`${timeCreated}-${contents}`} onDelete={onDelete} onComplete={onComplete} id={id} timeCreated={timeCreated} />)}
     </div>);
 };
 
-TodoList.displayName = "TodoList";
+const enhance = compose<{}, TodoListProps>(setDisplayName("TodoList"), pure);
 
-export default TodoList;
+export default enhance(TodoList);

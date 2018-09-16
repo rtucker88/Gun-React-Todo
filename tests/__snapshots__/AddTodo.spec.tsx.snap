@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`AddTodo renders correctly 1`] = `
 <div
   className="add-todo-container"
 >
@@ -14,7 +14,7 @@ exports[`renders correctly 1`] = `
         className="bp3-input"
         onChange={[Function]}
         onKeyDown={[Function]}
-        placeholder="text"
+        placeholder="enterANewTodo"
         style={
           Object {
             "paddingRight": 10,
@@ -33,6 +33,7 @@ exports[`renders correctly 1`] = `
     >
       <span
         className="bp3-icon bp3-icon-add"
+        icon="add"
       >
         <svg
           data-icon="add"

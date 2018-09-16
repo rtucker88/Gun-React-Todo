@@ -1,8 +1,8 @@
 import * as React from "react";
-import * as uuidv4 from "uuid/v4";
+import { default as uuidv4 } from "uuid/v4";
 import * as i18nnext from "i18next";
 import Navbar from "./Navbar";
-import { TodoList, Todo } from "./TodoList";
+import { default as TodoList, Todo } from "./TodoList";
 import AddTodo from "./AddTodo";
 import { default as Filter, FilterToggle } from "./Filter";
 import UnreachableCaseError from "../utils/UnreachableErrorCase";

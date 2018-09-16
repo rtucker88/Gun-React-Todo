@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList should render 1`] = `
+<TodoList
+  onComplete={[MockFunction]}
+  onDelete={[MockFunction]}
+  todos={
+    Array [
+      Object {
+        "completed": false,
+        "contents": "FIRST",
+        "id": "ID",
+        "timeCreated": 1000,
+      },
+    ]
+  }
+>
+  <TodoList
+    onComplete={[MockFunction]}
+    onDelete={[MockFunction]}
+    todos={
+      Array [
+        Object {
+          "completed": false,
+          "contents": "FIRST",
+          "id": "ID",
+          "timeCreated": 1000,
+        },
+      ]
+    }
+  >
+    <div
+      className="todo-list"
+    >
+      <Todo
+        completed={false}
+        contents="FIRST"
+        id="ID"
+        key="1000-FIRST"
+        onComplete={[MockFunction]}
+        onDelete={[MockFunction]}
+        timeCreated={1000}
+      >
+        <withHandlers(Todo)
+          completed={false}
+          contents="FIRST"
+          i18n={
+            Object {
+              "default": Object {
+                "language": "en",
+              },
+            }
+          }
+          id="ID"
+          onComplete={[MockFunction]}
+          onDelete={[MockFunction]}
+          t={[Function]}
+          timeCreated={1000}
+        >
+          <Todo
+            completed={false}
+            contents="FIRST"
+            handleComplete={[Function]}
+            handleDelete={[Function]}
+            i18n={
+              Object {
+                "default": Object {
+                  "language": "en",
+                },
+              }
+            }
+            id="ID"
+            onComplete={[MockFunction]}
+            onDelete={[MockFunction]}
+            t={[Function]}
+            timeCreated={1000}
+          >
+            <Blueprint3.Card
+              className="todo"
+              elevation={0}
+              interactive={false}
+            >
+              <div
+                className="bp3-card bp3-elevation-0 todo"
+              >
+                <Blueprint3.Checkbox
+                  checked={false}
+                  className="aligner"
+                  onChange={[Function]}
+                >
+                  <Control
+                    checked={false}
+                    className="aligner"
+                    inputRef={[Function]}
+                    onChange={[Function]}
+                    type="checkbox"
+                    typeClassName="bp3-checkbox"
+                  >
+                    <label
+                      className="bp3-control bp3-checkbox aligner"
+                    >
+                      <input
+                        checked={false}
+                        onChange={[Function]}
+                        type="checkbox"
+                      />
+                      <span
+                        className="bp3-control-indicator"
+                      />
+                    </label>
+                  </Control>
+                </Blueprint3.Checkbox>
+                <p
+                  className="aligner"
+                >
+                  FIRST
+                </p>
+                <Blueprint3.Button
+                  className="aligner"
+                  icon="trash"
+                  intent="danger"
+                  minimal={true}
+                  onClick={[Function]}
+                >
+                  <button
+                    className="bp3-button bp3-minimal bp3-intent-danger aligner"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    type="button"
+                  >
+                    <Blueprint3.Icon
+                      icon="trash"
+                      key="leftIcon"
+                    >
+                      <span
+                        className="bp3-icon bp3-icon-trash"
+                        icon="trash"
+                      >
+                        <svg
+                          data-icon="trash"
+                          height={16}
+                          viewBox="0 0 16 16"
+                          width={16}
+                        >
+                          <desc>
+                            trash
+                          </desc>
+                          <path
+                            d="M14.49 3.99h-13c-.28 0-.5.22-.5.5s.22.5.5.5h.5v10c0 .55.45 1 1 1h10c.55 0 1-.45 1-1v-10h.5c.28 0 .5-.22.5-.5s-.22-.5-.5-.5zm-8.5 9c0 .55-.45 1-1 1s-1-.45-1-1v-6c0-.55.45-1 1-1s1 .45 1 1v6zm3 0c0 .55-.45 1-1 1s-1-.45-1-1v-6c0-.55.45-1 1-1s1 .45 1 1v6zm3 0c0 .55-.45 1-1 1s-1-.45-1-1v-6c0-.55.45-1 1-1s1 .45 1 1v6zm2-12h-4c0-.55-.45-1-1-1h-2c-.55 0-1 .45-1 1h-4c-.55 0-1 .45-1 1v1h14v-1c0-.55-.45-1-1-1z"
+                            fillRule="evenodd"
+                            key="0"
+                          />
+                        </svg>
+                      </span>
+                    </Blueprint3.Icon>
+                    <Blueprint3.Icon
+                      key="rightIcon"
+                    />
+                  </button>
+                </Blueprint3.Button>
+                <span
+                  className="created-date"
+                >
+                  created 12/31/1969
+                </span>
+              </div>
+            </Blueprint3.Card>
+          </Todo>
+        </withHandlers(Todo)>
+      </Todo>
+    </div>
+  </TodoList>
+</TodoList>
+`;

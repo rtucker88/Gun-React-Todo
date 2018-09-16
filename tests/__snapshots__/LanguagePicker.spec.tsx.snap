@@ -1,0 +1,754 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LanguagePicker gets the menu items 1`] = `
+<Blueprint3.Menu>
+  <ul
+    className="bp3-menu"
+  >
+    <Blueprint3.MenuItem
+      disabled={false}
+      key="US"
+      multiline={false}
+      onClick={[Function]}
+      popoverProps={Object {}}
+      shouldDismissPopover={true}
+      text="🇺🇸 English"
+    >
+      <li
+        className=""
+      >
+        <a
+          className="bp3-menu-item bp3-popover-dismiss"
+          onClick={[Function]}
+        >
+          <Blueprint3.Icon />
+          <Blueprint3.Text
+            className="bp3-fill"
+            ellipsize={true}
+          >
+            <div
+              className="bp3-text-overflow-ellipsis bp3-fill"
+            >
+              🇺🇸 English
+            </div>
+          </Blueprint3.Text>
+        </a>
+      </li>
+    </Blueprint3.MenuItem>
+    <Blueprint3.MenuItem
+      disabled={false}
+      key="DE"
+      multiline={false}
+      onClick={[Function]}
+      popoverProps={Object {}}
+      shouldDismissPopover={true}
+      text="🇩🇪 Deutsch"
+    >
+      <li
+        className=""
+      >
+        <a
+          className="bp3-menu-item bp3-popover-dismiss"
+          onClick={[Function]}
+        >
+          <Blueprint3.Icon />
+          <Blueprint3.Text
+            className="bp3-fill"
+            ellipsize={true}
+          >
+            <div
+              className="bp3-text-overflow-ellipsis bp3-fill"
+            >
+              🇩🇪 Deutsch
+            </div>
+          </Blueprint3.Text>
+        </a>
+      </li>
+    </Blueprint3.MenuItem>
+    <Blueprint3.MenuItem
+      disabled={false}
+      key="GR"
+      multiline={false}
+      onClick={[Function]}
+      popoverProps={Object {}}
+      shouldDismissPopover={true}
+      text="🇬🇷 ελληνικά"
+    >
+      <li
+        className=""
+      >
+        <a
+          className="bp3-menu-item bp3-popover-dismiss"
+          onClick={[Function]}
+        >
+          <Blueprint3.Icon />
+          <Blueprint3.Text
+            className="bp3-fill"
+            ellipsize={true}
+          >
+            <div
+              className="bp3-text-overflow-ellipsis bp3-fill"
+            >
+              🇬🇷 ελληνικά
+            </div>
+          </Blueprint3.Text>
+        </a>
+      </li>
+    </Blueprint3.MenuItem>
+    <Blueprint3.MenuItem
+      disabled={false}
+      key="UA"
+      multiline={false}
+      onClick={[Function]}
+      popoverProps={Object {}}
+      shouldDismissPopover={true}
+      text="🇺🇦 Українська"
+    >
+      <li
+        className=""
+      >
+        <a
+          className="bp3-menu-item bp3-popover-dismiss"
+          onClick={[Function]}
+        >
+          <Blueprint3.Icon />
+          <Blueprint3.Text
+            className="bp3-fill"
+            ellipsize={true}
+          >
+            <div
+              className="bp3-text-overflow-ellipsis bp3-fill"
+            >
+              🇺🇦 Українська
+            </div>
+          </Blueprint3.Text>
+        </a>
+      </li>
+    </Blueprint3.MenuItem>
+  </ul>
+</Blueprint3.Menu>
+`;
+
+exports[`LanguagePicker renders correctly 1`] = `
+<LanguagePicker
+  currentLanguage="en"
+  onChangeLanguage={[MockFunction]}
+>
+  <LanguagePicker
+    currentLanguage="en"
+    onChangeLanguage={[MockFunction]}
+  >
+    <Blueprint3.Popover
+      captureDismiss={false}
+      content={
+        <Blueprint3.Menu>
+          <Blueprint3.MenuItem
+            disabled={false}
+            multiline={false}
+            onClick={[Function]}
+            popoverProps={Object {}}
+            shouldDismissPopover={true}
+            text="🇺🇸 English"
+          />
+          <Blueprint3.MenuItem
+            disabled={false}
+            multiline={false}
+            onClick={[Function]}
+            popoverProps={Object {}}
+            shouldDismissPopover={true}
+            text="🇩🇪 Deutsch"
+          />
+          <Blueprint3.MenuItem
+            disabled={false}
+            multiline={false}
+            onClick={[Function]}
+            popoverProps={Object {}}
+            shouldDismissPopover={true}
+            text="🇬🇷 ελληνικά"
+          />
+          <Blueprint3.MenuItem
+            disabled={false}
+            multiline={false}
+            onClick={[Function]}
+            popoverProps={Object {}}
+            shouldDismissPopover={true}
+            text="🇺🇦 Українська"
+          />
+        </Blueprint3.Menu>
+      }
+      defaultIsOpen={false}
+      disabled={false}
+      hasBackdrop={false}
+      hoverCloseDelay={300}
+      hoverOpenDelay={150}
+      inheritDarkTheme={true}
+      interactionKind="click"
+      minimal={false}
+      modifiers={Object {}}
+      openOnTargetFocus={true}
+      position="bottom-left"
+      targetTagName="span"
+      transitionDuration={300}
+      usePortal={true}
+      wrapperTagName="span"
+    >
+      <Manager>
+        <span
+          className="bp3-popover-wrapper"
+        >
+          <Reference
+            innerRef={[Function]}
+          >
+            <InnerReference
+              getReferenceRef={[Function]}
+              innerRef={[Function]}
+            >
+              <Blueprint3.ResizeSensor
+                onResize={[Function]}
+              >
+                <span
+                  className="bp3-popover-target"
+                  onClick={[Function]}
+                >
+                  <Blueprint3.Button
+                    className=""
+                    icon="caret-down"
+                    key=".0"
+                    minimal={true}
+                    text="🇺🇸"
+                  >
+                    <button
+                      className="bp3-button bp3-minimal"
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      type="button"
+                    >
+                      <Blueprint3.Icon
+                        icon="caret-down"
+                        key="leftIcon"
+                      >
+                        <span
+                          className="bp3-icon bp3-icon-caret-down"
+                          icon="caret-down"
+                        >
+                          <svg
+                            data-icon="caret-down"
+                            height={16}
+                            viewBox="0 0 16 16"
+                            width={16}
+                          >
+                            <desc>
+                              caret-down
+                            </desc>
+                            <path
+                              d="M12 6.5c0-.28-.22-.5-.5-.5h-7a.495.495 0 0 0-.37.83l3.5 4c.09.1.22.17.37.17s.28-.07.37-.17l3.5-4c.08-.09.13-.2.13-.33z"
+                              fillRule="evenodd"
+                              key="0"
+                            />
+                          </svg>
+                        </span>
+                      </Blueprint3.Icon>
+                      <span
+                        className="bp3-button-text"
+                        key="text"
+                      >
+                        🇺🇸
+                      </span>
+                      <Blueprint3.Icon
+                        key="rightIcon"
+                      />
+                    </button>
+                  </Blueprint3.Button>
+                </span>
+              </Blueprint3.ResizeSensor>
+            </InnerReference>
+          </Reference>
+          <Blueprint3.Overlay
+            autoFocus={true}
+            backdropClassName="bp3-popover-backdrop"
+            backdropProps={Object {}}
+            canEscapeKeyClose={true}
+            canOutsideClickClose={true}
+            enforceFocus={true}
+            hasBackdrop={false}
+            isOpen={false}
+            lazy={true}
+            onClose={[Function]}
+            transitionDuration={300}
+            transitionName="bp3-popover"
+            usePortal={true}
+          />
+        </span>
+      </Manager>
+    </Blueprint3.Popover>
+  </LanguagePicker>
+</LanguagePicker>
+`;
+
+exports[`LanguagePicker renders correctly 2`] = `
+<LanguagePicker
+  currentLanguage="de"
+  onChangeLanguage={[MockFunction]}
+>
+  <LanguagePicker
+    currentLanguage="de"
+    onChangeLanguage={[MockFunction]}
+  >
+    <Blueprint3.Popover
+      captureDismiss={false}
+      content={
+        <Blueprint3.Menu>
+          <Blueprint3.MenuItem
+            disabled={false}
+            multiline={false}
+            onClick={[Function]}
+            popoverProps={Object {}}
+            shouldDismissPopover={true}
+            text="🇺🇸 English"
+          />
+          <Blueprint3.MenuItem
+            disabled={false}
+            multiline={false}
+            onClick={[Function]}
+            popoverProps={Object {}}
+            shouldDismissPopover={true}
+            text="🇩🇪 Deutsch"
+          />
+          <Blueprint3.MenuItem
+            disabled={false}
+            multiline={false}
+            onClick={[Function]}
+            popoverProps={Object {}}
+            shouldDismissPopover={true}
+            text="🇬🇷 ελληνικά"
+          />
+          <Blueprint3.MenuItem
+            disabled={false}
+            multiline={false}
+            onClick={[Function]}
+            popoverProps={Object {}}
+            shouldDismissPopover={true}
+            text="🇺🇦 Українська"
+          />
+        </Blueprint3.Menu>
+      }
+      defaultIsOpen={false}
+      disabled={false}
+      hasBackdrop={false}
+      hoverCloseDelay={300}
+      hoverOpenDelay={150}
+      inheritDarkTheme={true}
+      interactionKind="click"
+      minimal={false}
+      modifiers={Object {}}
+      openOnTargetFocus={true}
+      position="bottom-left"
+      targetTagName="span"
+      transitionDuration={300}
+      usePortal={true}
+      wrapperTagName="span"
+    >
+      <Manager>
+        <span
+          className="bp3-popover-wrapper"
+        >
+          <Reference
+            innerRef={[Function]}
+          >
+            <InnerReference
+              getReferenceRef={[Function]}
+              innerRef={[Function]}
+            >
+              <Blueprint3.ResizeSensor
+                onResize={[Function]}
+              >
+                <span
+                  className="bp3-popover-target"
+                  onClick={[Function]}
+                >
+                  <Blueprint3.Button
+                    className=""
+                    icon="caret-down"
+                    key=".0"
+                    minimal={true}
+                    text="🇩🇪"
+                  >
+                    <button
+                      className="bp3-button bp3-minimal"
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      type="button"
+                    >
+                      <Blueprint3.Icon
+                        icon="caret-down"
+                        key="leftIcon"
+                      >
+                        <span
+                          className="bp3-icon bp3-icon-caret-down"
+                          icon="caret-down"
+                        >
+                          <svg
+                            data-icon="caret-down"
+                            height={16}
+                            viewBox="0 0 16 16"
+                            width={16}
+                          >
+                            <desc>
+                              caret-down
+                            </desc>
+                            <path
+                              d="M12 6.5c0-.28-.22-.5-.5-.5h-7a.495.495 0 0 0-.37.83l3.5 4c.09.1.22.17.37.17s.28-.07.37-.17l3.5-4c.08-.09.13-.2.13-.33z"
+                              fillRule="evenodd"
+                              key="0"
+                            />
+                          </svg>
+                        </span>
+                      </Blueprint3.Icon>
+                      <span
+                        className="bp3-button-text"
+                        key="text"
+                      >
+                        🇩🇪
+                      </span>
+                      <Blueprint3.Icon
+                        key="rightIcon"
+                      />
+                    </button>
+                  </Blueprint3.Button>
+                </span>
+              </Blueprint3.ResizeSensor>
+            </InnerReference>
+          </Reference>
+          <Blueprint3.Overlay
+            autoFocus={true}
+            backdropClassName="bp3-popover-backdrop"
+            backdropProps={Object {}}
+            canEscapeKeyClose={true}
+            canOutsideClickClose={true}
+            enforceFocus={true}
+            hasBackdrop={false}
+            isOpen={false}
+            lazy={true}
+            onClose={[Function]}
+            transitionDuration={300}
+            transitionName="bp3-popover"
+            usePortal={true}
+          />
+        </span>
+      </Manager>
+    </Blueprint3.Popover>
+  </LanguagePicker>
+</LanguagePicker>
+`;
+
+exports[`LanguagePicker renders correctly 3`] = `
+<LanguagePicker
+  currentLanguage="el"
+  onChangeLanguage={[MockFunction]}
+>
+  <LanguagePicker
+    currentLanguage="el"
+    onChangeLanguage={[MockFunction]}
+  >
+    <Blueprint3.Popover
+      captureDismiss={false}
+      content={
+        <Blueprint3.Menu>
+          <Blueprint3.MenuItem
+            disabled={false}
+            multiline={false}
+            onClick={[Function]}
+            popoverProps={Object {}}
+            shouldDismissPopover={true}
+            text="🇺🇸 English"
+          />
+          <Blueprint3.MenuItem
+            disabled={false}
+            multiline={false}
+            onClick={[Function]}
+            popoverProps={Object {}}
+            shouldDismissPopover={true}
+            text="🇩🇪 Deutsch"
+          />
+          <Blueprint3.MenuItem
+            disabled={false}
+            multiline={false}
+            onClick={[Function]}
+            popoverProps={Object {}}
+            shouldDismissPopover={true}
+            text="🇬🇷 ελληνικά"
+          />
+          <Blueprint3.MenuItem
+            disabled={false}
+            multiline={false}
+            onClick={[Function]}
+            popoverProps={Object {}}
+            shouldDismissPopover={true}
+            text="🇺🇦 Українська"
+          />
+        </Blueprint3.Menu>
+      }
+      defaultIsOpen={false}
+      disabled={false}
+      hasBackdrop={false}
+      hoverCloseDelay={300}
+      hoverOpenDelay={150}
+      inheritDarkTheme={true}
+      interactionKind="click"
+      minimal={false}
+      modifiers={Object {}}
+      openOnTargetFocus={true}
+      position="bottom-left"
+      targetTagName="span"
+      transitionDuration={300}
+      usePortal={true}
+      wrapperTagName="span"
+    >
+      <Manager>
+        <span
+          className="bp3-popover-wrapper"
+        >
+          <Reference
+            innerRef={[Function]}
+          >
+            <InnerReference
+              getReferenceRef={[Function]}
+              innerRef={[Function]}
+            >
+              <Blueprint3.ResizeSensor
+                onResize={[Function]}
+              >
+                <span
+                  className="bp3-popover-target"
+                  onClick={[Function]}
+                >
+                  <Blueprint3.Button
+                    className=""
+                    icon="caret-down"
+                    key=".0"
+                    minimal={true}
+                    text="🇬🇷"
+                  >
+                    <button
+                      className="bp3-button bp3-minimal"
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      type="button"
+                    >
+                      <Blueprint3.Icon
+                        icon="caret-down"
+                        key="leftIcon"
+                      >
+                        <span
+                          className="bp3-icon bp3-icon-caret-down"
+                          icon="caret-down"
+                        >
+                          <svg
+                            data-icon="caret-down"
+                            height={16}
+                            viewBox="0 0 16 16"
+                            width={16}
+                          >
+                            <desc>
+                              caret-down
+                            </desc>
+                            <path
+                              d="M12 6.5c0-.28-.22-.5-.5-.5h-7a.495.495 0 0 0-.37.83l3.5 4c.09.1.22.17.37.17s.28-.07.37-.17l3.5-4c.08-.09.13-.2.13-.33z"
+                              fillRule="evenodd"
+                              key="0"
+                            />
+                          </svg>
+                        </span>
+                      </Blueprint3.Icon>
+                      <span
+                        className="bp3-button-text"
+                        key="text"
+                      >
+                        🇬🇷
+                      </span>
+                      <Blueprint3.Icon
+                        key="rightIcon"
+                      />
+                    </button>
+                  </Blueprint3.Button>
+                </span>
+              </Blueprint3.ResizeSensor>
+            </InnerReference>
+          </Reference>
+          <Blueprint3.Overlay
+            autoFocus={true}
+            backdropClassName="bp3-popover-backdrop"
+            backdropProps={Object {}}
+            canEscapeKeyClose={true}
+            canOutsideClickClose={true}
+            enforceFocus={true}
+            hasBackdrop={false}
+            isOpen={false}
+            lazy={true}
+            onClose={[Function]}
+            transitionDuration={300}
+            transitionName="bp3-popover"
+            usePortal={true}
+          />
+        </span>
+      </Manager>
+    </Blueprint3.Popover>
+  </LanguagePicker>
+</LanguagePicker>
+`;
+
+exports[`LanguagePicker renders correctly 4`] = `
+<LanguagePicker
+  currentLanguage="uk"
+  onChangeLanguage={[MockFunction]}
+>
+  <LanguagePicker
+    currentLanguage="uk"
+    onChangeLanguage={[MockFunction]}
+  >
+    <Blueprint3.Popover
+      captureDismiss={false}
+      content={
+        <Blueprint3.Menu>
+          <Blueprint3.MenuItem
+            disabled={false}
+            multiline={false}
+            onClick={[Function]}
+            popoverProps={Object {}}
+            shouldDismissPopover={true}
+            text="🇺🇸 English"
+          />
+          <Blueprint3.MenuItem
+            disabled={false}
+            multiline={false}
+            onClick={[Function]}
+            popoverProps={Object {}}
+            shouldDismissPopover={true}
+            text="🇩🇪 Deutsch"
+          />
+          <Blueprint3.MenuItem
+            disabled={false}
+            multiline={false}
+            onClick={[Function]}
+            popoverProps={Object {}}
+            shouldDismissPopover={true}
+            text="🇬🇷 ελληνικά"
+          />
+          <Blueprint3.MenuItem
+            disabled={false}
+            multiline={false}
+            onClick={[Function]}
+            popoverProps={Object {}}
+            shouldDismissPopover={true}
+            text="🇺🇦 Українська"
+          />
+        </Blueprint3.Menu>
+      }
+      defaultIsOpen={false}
+      disabled={false}
+      hasBackdrop={false}
+      hoverCloseDelay={300}
+      hoverOpenDelay={150}
+      inheritDarkTheme={true}
+      interactionKind="click"
+      minimal={false}
+      modifiers={Object {}}
+      openOnTargetFocus={true}
+      position="bottom-left"
+      targetTagName="span"
+      transitionDuration={300}
+      usePortal={true}
+      wrapperTagName="span"
+    >
+      <Manager>
+        <span
+          className="bp3-popover-wrapper"
+        >
+          <Reference
+            innerRef={[Function]}
+          >
+            <InnerReference
+              getReferenceRef={[Function]}
+              innerRef={[Function]}
+            >
+              <Blueprint3.ResizeSensor
+                onResize={[Function]}
+              >
+                <span
+                  className="bp3-popover-target"
+                  onClick={[Function]}
+                >
+                  <Blueprint3.Button
+                    className=""
+                    icon="caret-down"
+                    key=".0"
+                    minimal={true}
+                    text="🇺🇦"
+                  >
+                    <button
+                      className="bp3-button bp3-minimal"
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      type="button"
+                    >
+                      <Blueprint3.Icon
+                        icon="caret-down"
+                        key="leftIcon"
+                      >
+                        <span
+                          className="bp3-icon bp3-icon-caret-down"
+                          icon="caret-down"
+                        >
+                          <svg
+                            data-icon="caret-down"
+                            height={16}
+                            viewBox="0 0 16 16"
+                            width={16}
+                          >
+                            <desc>
+                              caret-down
+                            </desc>
+                            <path
+                              d="M12 6.5c0-.28-.22-.5-.5-.5h-7a.495.495 0 0 0-.37.83l3.5 4c.09.1.22.17.37.17s.28-.07.37-.17l3.5-4c.08-.09.13-.2.13-.33z"
+                              fillRule="evenodd"
+                              key="0"
+                            />
+                          </svg>
+                        </span>
+                      </Blueprint3.Icon>
+                      <span
+                        className="bp3-button-text"
+                        key="text"
+                      >
+                        🇺🇦
+                      </span>
+                      <Blueprint3.Icon
+                        key="rightIcon"
+                      />
+                    </button>
+                  </Blueprint3.Button>
+                </span>
+              </Blueprint3.ResizeSensor>
+            </InnerReference>
+          </Reference>
+          <Blueprint3.Overlay
+            autoFocus={true}
+            backdropClassName="bp3-popover-backdrop"
+            backdropProps={Object {}}
+            canEscapeKeyClose={true}
+            canOutsideClickClose={true}
+            enforceFocus={true}
+            hasBackdrop={false}
+            isOpen={false}
+            lazy={true}
+            onClose={[Function]}
+            transitionDuration={300}
+            transitionName="bp3-popover"
+            usePortal={true}
+          />
+        </span>
+      </Manager>
+    </Blueprint3.Popover>
+  </LanguagePicker>
+</LanguagePicker>
+`;

@@ -1,5 +1,5 @@
 import * as i18n from "i18next";
-import * as LanguageDetector from "i18next-browser-languagedetector";
+import LanguageDetector from "i18next-browser-languagedetector";
 import { reactI18nextModule } from "react-i18next";
 
 i18n

@@ -17,18 +17,19 @@ interface FilterHandlerProps {
     updateCompleted: () => void;
 }
 
-type FilterCombinedProps = FilterProps & TransProps & FilterHandlerProps;
+export type FilterCombinedProps = FilterProps & TransProps & FilterHandlerProps;
 
-const enhance = compose<{}, FilterProps>(withHandlers<FilterProps, FilterHandlerProps>({
+export const handlers = withHandlers<FilterProps, FilterHandlerProps>({
     updateAll: props => () => props.onUpdateFilter("ALL"),
     updateIncomplete: props => () => props.onUpdateFilter("INCOMPLETE"),
     updateCompleted: props => () => props.onUpdateFilter("COMPLETED"),
-}),
-setDisplayName("Filter"));
+});
+
+const enhance = compose<{}, FilterProps>(setDisplayName("Filter"), translate("filterToggle"), handlers);
 
 export type FilterToggle = "ALL" | "COMPLETED" | "INCOMPLETE";
 
-export const Filter: React.SFC<FilterCombinedProps> = ({ filterToggle, updateAll, updateCompleted, updateIncomplete, t }) => {
+const Filter: React.SFC<FilterCombinedProps> = ({ filterToggle, updateAll, updateCompleted, updateIncomplete, t }) => {
     return (
     <div className="filter">
         <ButtonGroup>
@@ -39,4 +40,4 @@ export const Filter: React.SFC<FilterCombinedProps> = ({ filterToggle, updateAll
     </div>);
 };
 
-export default translate("filterToggle")(enhance(Filter));
+export default enhance(Filter);

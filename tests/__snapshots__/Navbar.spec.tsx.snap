@@ -1,0 +1,308 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar should render correctly 1`] = `
+<Navbar
+  currentLanguage="en"
+  onChangeLanguage={[MockFunction]}
+>
+  <Component
+    currentLanguage="en"
+    onChangeLanguage={[MockFunction]}
+  >
+    <Navbar
+      currentLanguage="en"
+      i18n={
+        Object {
+          "default": Object {
+            "language": "en",
+          },
+        }
+      }
+      onChangeLanguage={[MockFunction]}
+      t={[Function]}
+    >
+      <Blueprint3.Navbar>
+        <div
+          className="bp3-navbar"
+        >
+          <Blueprint3.NavbarGroup
+            align="left"
+          >
+            <div
+              className="bp3-navbar-group bp3-align-left"
+            >
+              <Blueprint3.NavbarHeading>
+                <div
+                  className="bp3-navbar-heading"
+                >
+                  Gun-React-Todo
+                </div>
+              </Blueprint3.NavbarHeading>
+              <Blueprint3.NavbarDivider>
+                <div
+                  className="bp3-navbar-divider"
+                />
+              </Blueprint3.NavbarDivider>
+              <Blueprint3.Button
+                className="bp3-minimal"
+                icon="home"
+                text="home"
+              >
+                <button
+                  className="bp3-button bp3-minimal"
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  type="button"
+                >
+                  <Blueprint3.Icon
+                    icon="home"
+                    key="leftIcon"
+                  >
+                    <span
+                      className="bp3-icon bp3-icon-home"
+                      icon="home"
+                    >
+                      <svg
+                        data-icon="home"
+                        height={16}
+                        viewBox="0 0 16 16"
+                        width={16}
+                      >
+                        <desc>
+                          home
+                        </desc>
+                        <path
+                          d="M2 10v5c0 .55.45 1 1 1h3v-5h4v5h3c.55 0 1-.45 1-1v-5L8 4l-6 6zm13.71-2.71L14 5.59V2c0-.55-.45-1-1-1s-1 .45-1 1v1.59L8.71.29C8.53.11 8.28 0 8 0s-.53.11-.71.29l-7 7a1.003 1.003 0 0 0 1.42 1.42L8 2.41l6.29 6.29c.18.19.43.3.71.3a1.003 1.003 0 0 0 .71-1.71z"
+                          fillRule="evenodd"
+                          key="0"
+                        />
+                      </svg>
+                    </span>
+                  </Blueprint3.Icon>
+                  <span
+                    className="bp3-button-text"
+                    key="text"
+                  >
+                    home
+                  </span>
+                  <Blueprint3.Icon
+                    key="rightIcon"
+                  />
+                </button>
+              </Blueprint3.Button>
+              <Blueprint3.Button
+                className="bp3-minimal"
+                icon="help"
+                text="about"
+              >
+                <button
+                  className="bp3-button bp3-minimal"
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  type="button"
+                >
+                  <Blueprint3.Icon
+                    icon="help"
+                    key="leftIcon"
+                  >
+                    <span
+                      className="bp3-icon bp3-icon-help"
+                      icon="help"
+                    >
+                      <svg
+                        data-icon="help"
+                        height={16}
+                        viewBox="0 0 16 16"
+                        width={16}
+                      >
+                        <desc>
+                          help
+                        </desc>
+                        <path
+                          d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm1 13H7v-2h2v2zm1.93-6.52c-.14.32-.35.64-.62.97L9.25 8.83c-.12.15-.24.29-.28.42-.04.13-.09.3-.09.52V10H7.12V8.88s.05-.51.21-.71L8.4 6.73c.22-.26.35-.49.44-.68.09-.19.12-.38.12-.58 0-.3-.1-.55-.28-.75-.18-.19-.44-.28-.76-.28-.33 0-.59.1-.78.29-.19.19-.33.46-.4.81-.03.11-.1.15-.2.14l-1.7-.25c-.12-.01-.16-.08-.14-.19.12-.82.46-1.47 1.03-1.94.57-.48 1.32-.72 2.25-.72.47 0 .9.07 1.29.22s.72.34 1 .59c.28.25.49.55.65.89.15.35.22.72.22 1.12s-.07.75-.21 1.08z"
+                          fillRule="evenodd"
+                          key="0"
+                        />
+                      </svg>
+                    </span>
+                  </Blueprint3.Icon>
+                  <span
+                    className="bp3-button-text"
+                    key="text"
+                  >
+                    about
+                  </span>
+                  <Blueprint3.Icon
+                    key="rightIcon"
+                  />
+                </button>
+              </Blueprint3.Button>
+            </div>
+          </Blueprint3.NavbarGroup>
+          <Blueprint3.NavbarGroup
+            align="right"
+          >
+            <div
+              className="bp3-navbar-group bp3-align-right"
+            >
+              <LanguagePicker
+                currentLanguage="en"
+                onChangeLanguage={[MockFunction]}
+              >
+                <LanguagePicker
+                  currentLanguage="en"
+                  onChangeLanguage={[MockFunction]}
+                >
+                  <Blueprint3.Popover
+                    captureDismiss={false}
+                    content={
+                      <Blueprint3.Menu>
+                        <Blueprint3.MenuItem
+                          disabled={false}
+                          multiline={false}
+                          onClick={[Function]}
+                          popoverProps={Object {}}
+                          shouldDismissPopover={true}
+                          text="🇺🇸 English"
+                        />
+                        <Blueprint3.MenuItem
+                          disabled={false}
+                          multiline={false}
+                          onClick={[Function]}
+                          popoverProps={Object {}}
+                          shouldDismissPopover={true}
+                          text="🇩🇪 Deutsch"
+                        />
+                        <Blueprint3.MenuItem
+                          disabled={false}
+                          multiline={false}
+                          onClick={[Function]}
+                          popoverProps={Object {}}
+                          shouldDismissPopover={true}
+                          text="🇬🇷 ελληνικά"
+                        />
+                        <Blueprint3.MenuItem
+                          disabled={false}
+                          multiline={false}
+                          onClick={[Function]}
+                          popoverProps={Object {}}
+                          shouldDismissPopover={true}
+                          text="🇺🇦 Українська"
+                        />
+                      </Blueprint3.Menu>
+                    }
+                    defaultIsOpen={false}
+                    disabled={false}
+                    hasBackdrop={false}
+                    hoverCloseDelay={300}
+                    hoverOpenDelay={150}
+                    inheritDarkTheme={true}
+                    interactionKind="click"
+                    minimal={false}
+                    modifiers={Object {}}
+                    openOnTargetFocus={true}
+                    position="bottom-left"
+                    targetTagName="span"
+                    transitionDuration={300}
+                    usePortal={true}
+                    wrapperTagName="span"
+                  >
+                    <Manager>
+                      <span
+                        className="bp3-popover-wrapper"
+                      >
+                        <Reference
+                          innerRef={[Function]}
+                        >
+                          <InnerReference
+                            getReferenceRef={[Function]}
+                            innerRef={[Function]}
+                          >
+                            <Blueprint3.ResizeSensor
+                              onResize={[Function]}
+                            >
+                              <span
+                                className="bp3-popover-target"
+                                onClick={[Function]}
+                              >
+                                <Blueprint3.Button
+                                  className=""
+                                  icon="caret-down"
+                                  key=".0"
+                                  minimal={true}
+                                  text="🇺🇸"
+                                >
+                                  <button
+                                    className="bp3-button bp3-minimal"
+                                    onKeyDown={[Function]}
+                                    onKeyUp={[Function]}
+                                    type="button"
+                                  >
+                                    <Blueprint3.Icon
+                                      icon="caret-down"
+                                      key="leftIcon"
+                                    >
+                                      <span
+                                        className="bp3-icon bp3-icon-caret-down"
+                                        icon="caret-down"
+                                      >
+                                        <svg
+                                          data-icon="caret-down"
+                                          height={16}
+                                          viewBox="0 0 16 16"
+                                          width={16}
+                                        >
+                                          <desc>
+                                            caret-down
+                                          </desc>
+                                          <path
+                                            d="M12 6.5c0-.28-.22-.5-.5-.5h-7a.495.495 0 0 0-.37.83l3.5 4c.09.1.22.17.37.17s.28-.07.37-.17l3.5-4c.08-.09.13-.2.13-.33z"
+                                            fillRule="evenodd"
+                                            key="0"
+                                          />
+                                        </svg>
+                                      </span>
+                                    </Blueprint3.Icon>
+                                    <span
+                                      className="bp3-button-text"
+                                      key="text"
+                                    >
+                                      🇺🇸
+                                    </span>
+                                    <Blueprint3.Icon
+                                      key="rightIcon"
+                                    />
+                                  </button>
+                                </Blueprint3.Button>
+                              </span>
+                            </Blueprint3.ResizeSensor>
+                          </InnerReference>
+                        </Reference>
+                        <Blueprint3.Overlay
+                          autoFocus={true}
+                          backdropClassName="bp3-popover-backdrop"
+                          backdropProps={Object {}}
+                          canEscapeKeyClose={true}
+                          canOutsideClickClose={true}
+                          enforceFocus={true}
+                          hasBackdrop={false}
+                          isOpen={false}
+                          lazy={true}
+                          onClose={[Function]}
+                          transitionDuration={300}
+                          transitionName="bp3-popover"
+                          usePortal={true}
+                        />
+                      </span>
+                    </Manager>
+                  </Blueprint3.Popover>
+                </LanguagePicker>
+              </LanguagePicker>
+            </div>
+          </Blueprint3.NavbarGroup>
+        </div>
+      </Blueprint3.Navbar>
+    </Navbar>
+  </Component>
+</Navbar>
+`;
